@@ -1,0 +1,26 @@
+
+  .dashboard-box {
+    transition: transform 0.2s ease-in-out;
+  }
+  .dashboard-box:hover {
+    transform: translateY(-6px);
+  }
+
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #0062ff, #4dabff);
+  }
+  .bg-gradient-success {
+    background: linear-gradient(135deg, #00c851, #66ff99);
+  }
+  .bg-gradient-warning {
+    background: linear-gradient(135deg, #ffbb33, #ff8800);
+  }
+  .bg-gradient-info {
+    background: linear-gradient(135deg, #33b5e5, #00d2ff);
+  }
+
+  .booking-row:hover {
+    background: #f8f9fa;
+    cursor: pointer;
+    transition: 0.2s;
+  }

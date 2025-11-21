@@ -1,0 +1,540 @@
+{
+  "cars": [
+    {
+      "carId": 1,
+      "brand": "Honda",
+      "model": "City",
+      "year": 2020,
+      "color": "White",
+      "dailyRate": 1500,
+      "carImage": "https://via.placeholder.com/100?text=Honda+City",
+      "regNo": "MH01AB1234",
+      "id": "8b6e"
+    },
+    {
+      "carId": 2,
+      "brand": "Toyota",
+      "model": "Corolla",
+      "year": 2019,
+      "color": "Silver",
+      "dailyRate": 1600,
+      "carImage": "https://via.placeholder.com/100?text=Toyota+Corolla",
+      "regNo": "MH02CD5678",
+      "id": "ca11"
+    },
+    {
+      "carId": 3,
+      "brand": "Hyundai",
+      "model": "Verna",
+      "year": 2021,
+      "color": "Black",
+      "dailyRate": 1700,
+      "carImage": "https://via.placeholder.com/100?text=Hyundai+Verna",
+      "regNo": "MH03EF9012",
+      "id": "9974"
+    },
+    {
+      "carId": 4,
+      "brand": "Maruti Suzuki",
+      "model": "Ciaz",
+      "year": 2022,
+      "color": "green",
+      "dailyRate": 1000,
+      "carImage": "https://via.placeholder.com/100?text=Ciaz",
+      "regNo": "MH04GH3456",
+      "id": "d8ff"
+    },
+    {
+      "carId": 5,
+      "brand": "Skoda",
+      "model": "Slavia",
+      "year": 2023,
+      "color": "Grey",
+      "dailyRate": 1800,
+      "carImage": "https://via.placeholder.com/100?text=Slavia",
+      "regNo": "MH05IJ7890",
+      "id": "a23e"
+    },
+    {
+      "carId": 6,
+      "brand": "Hyundai",
+      "model": "Creta",
+      "year": 2021,
+      "color": "White",
+      "dailyRate": 2000,
+      "carImage": "https://via.placeholder.com/100?text=Creta",
+      "regNo": "MH06KL1234",
+      "id": "cf7d"
+    },
+    {
+      "carId": 7,
+      "brand": "Kia",
+      "model": "Seltos",
+      "year": 2020,
+      "color": "Red",
+      "dailyRate": 2100,
+      "carImage": "https://via.placeholder.com/100?text=Seltos",
+      "regNo": "MH07MN5678",
+      "id": "00ea"
+    },
+    {
+      "carId": 8,
+      "brand": "Mahindra",
+      "model": "XUV300",
+      "year": 2022,
+      "color": "Black",
+      "dailyRate": 1900,
+      "carImage": "https://via.placeholder.com/100?text=XUV300",
+      "regNo": "MH08OP9012",
+      "id": "b357"
+    },
+    {
+      "carId": 9,
+      "brand": "Tata",
+      "model": "Harrier",
+      "year": 2023,
+      "color": "Grey",
+      "dailyRate": 2300,
+      "carImage": "https://via.placeholder.com/100?text=Harrier",
+      "regNo": "MH09QR3456",
+      "id": "4c65"
+    },
+    {
+      "carId": 10,
+      "brand": "MG",
+      "model": "Hector",
+      "year": 2021,
+      "color": "Blue",
+      "dailyRate": 2200,
+      "carImage": "https://via.placeholder.com/100?text=Hector",
+      "regNo": "MH10ST7890",
+      "id": "367e"
+    },
+    {
+      "carId": 11,
+      "brand": "Maruti Suzuki",
+      "model": "Baleno",
+      "year": 2022,
+      "color": "White",
+      "dailyRate": 1200,
+      "carImage": "https://via.placeholder.com/100?text=Baleno",
+      "regNo": "MH11UV1234",
+      "id": "01b1"
+    },
+    {
+      "carId": 12,
+      "brand": "Hyundai",
+      "model": "i20",
+      "year": 2020,
+      "color": "Silver",
+      "dailyRate": 1150,
+      "carImage": "https://via.placeholder.com/100?text=i20",
+      "regNo": "MH12WX5678",
+      "id": "a007"
+    },
+    {
+      "carId": 13,
+      "brand": "Tata",
+      "model": "Altroz",
+      "year": 2021,
+      "color": "Gold",
+      "dailyRate": 1100,
+      "carImage": "https://via.placeholder.com/100?text=Altroz",
+      "regNo": "MH13YZ9012",
+      "id": "b5f7"
+    },
+    {
+      "carId": 14,
+      "brand": "Maruti Suzuki",
+      "model": "Swift",
+      "year": 2019,
+      "color": "Red",
+      "dailyRate": 1000,
+      "carImage": "https://via.placeholder.com/100?text=Swift",
+      "regNo": "MH14AB3456",
+      "id": "11e7"
+    },
+    {
+      "carId": 15,
+      "brand": "Ford",
+      "model": "Figo",
+      "year": 2018,
+      "color": "Blue",
+      "dailyRate": 900,
+      "carImage": "https://via.placeholder.com/100?text=Figo",
+      "regNo": "MH15CD7890",
+      "id": "b285"
+    },
+    {
+      "carId": 16,
+      "brand": "BMW",
+      "model": "X3",
+      "year": 2022,
+      "color": "White",
+      "dailyRate": 6500,
+      "carImage": "https://via.placeholder.com/100?text=BMW+X3",
+      "regNo": "MH16EF1234",
+      "id": "cc07"
+    },
+    {
+      "carId": 17,
+      "brand": "Mercedes",
+      "model": "GLA",
+      "year": 2023,
+      "color": "Black",
+      "dailyRate": 7000,
+      "carImage": "https://via.placeholder.com/100?text=GLA",
+      "regNo": "MH17GH5678",
+      "id": "23d8"
+    },
+    {
+      "carId": 18,
+      "brand": "Audi",
+      "model": "Q3",
+      "year": 2021,
+      "color": "Grey",
+      "dailyRate": 7200,
+      "carImage": "https://via.placeholder.com/100?text=Audi+Q3",
+      "regNo": "MH18IJ9012",
+      "id": "9a03"
+    },
+    {
+      "carId": 19,
+      "brand": "Jaguar",
+      "model": "XF",
+      "year": 2020,
+      "color": "Blue",
+      "dailyRate": 8200,
+      "carImage": "https://via.placeholder.com/100?text=Jaguar+XF",
+      "regNo": "MH19KL3456",
+      "id": "4057"
+    },
+    {
+      "carId": 20,
+      "brand": "Volvo",
+      "model": "XC60",
+      "year": 2023,
+      "color": "White",
+      "dailyRate": 7500,
+      "carImage": "https://via.placeholder.com/100?text=Volvo+XC60",
+      "regNo": "MH20MN7890",
+      "id": "3215"
+    },
+    {
+      "carId": 21,
+      "brand": "Tesla",
+      "model": "Model 3",
+      "year": 2022,
+      "color": "White",
+      "dailyRate": 8500,
+      "carImage": "https://via.placeholder.com/100?text=Model+3",
+      "regNo": "MH21OP1234",
+      "id": "d5a0"
+    },
+    {
+      "carId": 22,
+      "brand": "Tata",
+      "model": "Nexon EV",
+      "year": 2023,
+      "color": "Blue",
+      "dailyRate": 2000,
+      "carImage": "https://via.placeholder.com/100?text=Nexon+EV",
+      "regNo": "MH22QR5678",
+      "id": "e8d1"
+    },
+    {
+      "carId": 23,
+      "brand": "MG",
+      "model": "ZS EV",
+      "year": 2021,
+      "color": "Silver",
+      "dailyRate": 2600,
+      "carImage": "https://via.placeholder.com/100?text=ZS+EV",
+      "regNo": "MH23ST9012",
+      "id": "af6d"
+    },
+    {
+      "carId": 24,
+      "brand": "Hyundai",
+      "model": "Kona EV",
+      "year": 2020,
+      "color": "Grey",
+      "dailyRate": 2400,
+      "carImage": "https://via.placeholder.com/100?text=Kona+EV",
+      "regNo": "MH24UV3456",
+      "id": "3c57"
+    },
+    {
+      "carId": 25,
+      "brand": "Mahindra",
+      "model": "E-Verito",
+      "year": 2019,
+      "color": "White",
+      "dailyRate": 1400,
+      "carImage": "https://via.placeholder.com/100?text=E-Verito",
+      "regNo": "MH25WX7890",
+      "id": "a34a"
+    },
+    {
+      "carId": 26,
+      "brand": "Kia",
+      "model": "Carnival",
+      "year": 2021,
+      "color": "Black",
+      "dailyRate": 3500,
+      "carImage": "https://via.placeholder.com/100?text=Carnival",
+      "regNo": "MH26YZ1234",
+      "id": "3a3e"
+    },
+    {
+      "carId": 27,
+      "brand": "Toyota",
+      "model": "Fortuner",
+      "year": 2023,
+      "color": "White",
+      "dailyRate": 4500,
+      "carImage": "https://via.placeholder.com/100?text=Fortuner",
+      "regNo": "MH27AB5678",
+      "id": "837f"
+    },
+    {
+      "carId": 28,
+      "brand": "Mahindra",
+      "model": "Scorpio",
+      "year": 2022,
+      "color": "Red",
+      "dailyRate": 2800,
+      "carImage": "https://via.placeholder.com/100?text=Scorpio",
+      "regNo": "MH28CD9012",
+      "id": "5397"
+    },
+    {
+      "carId": 29,
+      "brand": "Tata",
+      "model": "Safari",
+      "year": 2021,
+      "color": "Blue",
+      "dailyRate": 3000,
+      "carImage": "https://via.placeholder.com/100?text=Safari",
+      "regNo": "MH29EF3456",
+      "id": "1709"
+    },
+    {
+      "carId": 30,
+      "brand": "Nissan",
+      "model": "Kicks",
+      "year": 2020,
+      "color": "Orange",
+      "dailyRate": 1600,
+      "carImage": "https://via.placeholder.com/100?text=Kicks",
+      "regNo": "MH30GH7890",
+      "id": "e57b"
+    },
+    {
+      "carId": 31,
+      "brand": "Volkswagen",
+      "model": "Polo",
+      "year": 2019,
+      "color": "White",
+      "dailyRate": 1100,
+      "carImage": "https://via.placeholder.com/100?text=Polo",
+      "regNo": "MH31IJ1234",
+      "id": "380e"
+    },
+    {
+      "carId": 32,
+      "brand": "Maruti Suzuki",
+      "model": "WagonR",
+      "year": 2021,
+      "color": "Blue",
+      "dailyRate": 900,
+      "carImage": "https://via.placeholder.com/100?text=WagonR",
+      "regNo": "MH32KL5678",
+      "id": "c422"
+    },
+    {
+      "carId": 33,
+      "brand": "Renault",
+      "model": "Kwid",
+      "year": 2020,
+      "color": "Silver",
+      "dailyRate": 800,
+      "carImage": "https://via.placeholder.com/100?text=Kwid",
+      "regNo": "MH33MN9012",
+      "id": "1889"
+    },
+    {
+      "carId": 34,
+      "brand": "Hyundai",
+      "model": "Grand i10",
+      "year": 2018,
+      "color": "Grey",
+      "dailyRate": 850,
+      "carImage": "https://via.placeholder.com/100?text=Grand+i10",
+      "regNo": "MH34OP3456",
+      "id": "eaf3"
+    },
+    {
+      "carId": 35,
+      "brand": "Maruti Suzuki",
+      "model": "Alto",
+      "year": 2017,
+      "color": "Red",
+      "dailyRate": 700,
+      "carImage": "https://via.placeholder.com/100?text=Alto",
+      "regNo": "MH35QR7890",
+      "id": "b9c4"
+    },
+    {
+      "carId": 36,
+      "brand": "BMW",
+      "model": "5 Series",
+      "year": 2022,
+      "color": "White",
+      "dailyRate": 9000,
+      "carImage": "https://via.placeholder.com/100?text=BMW+5",
+      "regNo": "MH36ST1234",
+      "id": "3fbd"
+    },
+    {
+      "carId": 37,
+      "brand": "Mercedes",
+      "model": "C Class",
+      "year": 2021,
+      "color": "Black",
+      "dailyRate": 9500,
+      "carImage": "https://via.placeholder.com/100?text=C+Class",
+      "regNo": "MH37UV5678",
+      "id": "80a3"
+    },
+    {
+      "carId": 38,
+      "brand": "Audi",
+      "model": "A4",
+      "year": 2023,
+      "color": "Blue",
+      "dailyRate": 9800,
+      "carImage": "https://via.placeholder.com/100?text=Audi+A4",
+      "regNo": "MH38WX9012",
+      "id": "d087"
+    },
+    {
+      "carId": 39,
+      "brand": "Jaguar",
+      "model": "XE",
+      "year": 2020,
+      "color": "Grey",
+      "dailyRate": 11000,
+      "carImage": "https://via.placeholder.com/100?text=Jaguar+XE",
+      "regNo": "MH39YZ3456",
+      "id": "8427"
+    },
+    {
+      "carId": 40,
+      "brand": "Volvo",
+      "model": "S90",
+      "year": 2023,
+      "color": "White",
+      "dailyRate": 10000,
+      "carImage": "https://via.placeholder.com/100?text=Volvo+S90",
+      "regNo": "MH40AB7890",
+      "id": "47db"
+    },
+    {
+      "carId": 41,
+      "brand": "Tata",
+      "model": "Tiago EV",
+      "year": 2023,
+      "color": "Teal",
+      "dailyRate": 1400,
+      "carImage": "https://via.placeholder.com/100?text=Tiago+EV",
+      "regNo": "MH41CD1234",
+      "id": "c903"
+    },
+    {
+      "carId": 42,
+      "brand": "Hyundai",
+      "model": "Ioniq 5",
+      "year": 2024,
+      "color": "White",
+      "dailyRate": 8500,
+      "carImage": "https://via.placeholder.com/100?text=Ioniq5",
+      "regNo": "MH42EF5678",
+      "id": "6153"
+    },
+    {
+      "id": "uv8wqvqkc5kmi8nvd0r",
+      "carId": 43,
+      "brand": "Tesla",
+      "model": "Mariet",
+      "year": 2022,
+      "color": "Seren",
+      "dailyRate": 1300,
+      "carImage": "",
+      "regNo": "DL07BH004"
+    },
+    {
+      "id": "w0wqzy9j9dqmi8pb2hw",
+      "carId": 44,
+      "brand": "Ambasdor",
+      "model": "classic",
+      "year": 1993,
+      "color": "white",
+      "dailyRate": 700,
+      "carImage": "",
+      "regNo": "UP23DE3456"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "customerName": "sam",
+      "customerCity": "Ncr",
+      "mobileNo": "8765434567",
+      "email": "sam@gmail.com",
+      "carId": 45,
+      "bookingDate": "2025-11-09",
+      "discount": 50,
+      "totalBillAmount": 1300
+    },
+    {
+      "id": "2",
+      "customerName": "Raj",
+      "customerCity": "Mumbai",
+      "mobileNo": "98765433",
+      "email": "Sa@gmail.com",
+      "carId": 456,
+      "bookingDate": "2025-11-21",
+      "discount": 23,
+      "totalBillAmount": 1200
+    },
+    {
+      "id": "3",
+      "customerName": "RajivDixit",
+      "customerCity": "Noida",
+      "mobileNo": "987765367",
+      "email": "dixit@gmail.com",
+      "carId": 5,
+      "bookingDate": "2025-11-07",
+      "discount": 72,
+      "totalBillAmount": 1080
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123456"
+    },
+    {
+      "id": "1763700305756",
+      "username": "Sauravjha",
+      "password": "sauravjha99@"
+    },
+    {
+      "id": "1763700915476",
+      "username": "deepak",
+      "password": "imdeepak"
+    }
+  ]
+}

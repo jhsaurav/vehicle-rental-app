@@ -1,0 +1,23 @@
+.booking-card {
+  height: 420px;                 /* Set SAME height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-radius: 12px;
+}
+
+.booking-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.booking-info {
+  flex-grow: 1;                  /* Take full space */
+}
+
+.card-footer-actions {
+  margin-top: auto;              /* Buttons always at bottom */
+  text-align: right;             /* Align right */
+}

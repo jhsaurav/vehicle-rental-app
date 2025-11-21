@@ -1,0 +1,95 @@
+/* --- Glass Navbar --- */
+.main-navbar {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+/* Navbar Brand */
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #007bff !important;
+  letter-spacing: 0.5px;
+}
+
+/* Nav Links */
+.nav-link-custom {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 8px 18px !important;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+  color: #333 !important;
+}
+
+.nav-link-custom:hover {
+  background: rgba(0, 119, 255, 0.08);
+  color: #0056d6 !important;
+}
+
+/* Active link */
+.active-link {
+  background: rgba(0, 119, 255, 0.15);
+  color: #0056d6 !important;
+  border-radius: 8px;
+}
+
+/* Admin Text */
+.user-label {
+  font-weight: 600;
+  color: #444;
+  font-size: 15px;
+}
+
+/* Logout Button */
+.logout-btn {
+  border-radius: 6px;
+}
+
+/* Dark Mode Button */
+.dark-toggle-btn {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #444;
+  transition: 0.3s;
+}
+
+.dark-toggle-btn:hover {
+  transform: rotate(15deg);
+  color: #000;
+}
+
+/* --- DARK MODE OVERRIDES --- */
+.dark-mode .main-navbar {
+  background: rgba(25, 25, 25, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dark-mode .brand-text {
+  color: #4da3ff !important;
+}
+
+.dark-mode .nav-link-custom {
+  color: #ddd !important;
+}
+
+.dark-mode .nav-link-custom:hover {
+  background: rgba(80, 150, 255, 0.15);
+  color: #4da3ff !important;
+}
+
+.dark-mode .active-link {
+  background: rgba(80, 150, 255, 0.2);
+}
+
+.dark-mode .user-label {
+  color: #ddd;
+}
+
+.dark-mode .dark-toggle-btn {
+  color: #eee;
+}

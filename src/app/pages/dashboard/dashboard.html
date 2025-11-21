@@ -1,0 +1,77 @@
+<div class="container py-4">
+
+  <!-- DASHBOARD STATS-->
+  <div class="row g-4">
+
+    <!-- TOTAL VEHICLES -->
+    <div class="col-lg-3 col-md-6">
+      <div class="dashboard-box bg-gradient-primary text-white shadow-lg p-4 rounded-4 text-center">
+        <i class="fa fa-car fa-2x mb-3"></i>
+        <h6 class="text-uppercase mb-1">Total Vehicles</h6>
+        <h2 class="fw-bold">{{ totalVehicles }}</h2>
+      </div>
+    </div>
+
+    <!-- TOTAL BOOKINGS -->
+    <div class="col-lg-3 col-md-6">
+      <div class="dashboard-box bg-gradient-success text-white shadow-lg p-4 rounded-4 text-center">
+        <i class="fa fa-ticket fa-2x mb-3"></i>
+        <h6 class="text-uppercase mb-1">Total Bookings</h6>
+        <h2 class="fw-bold">{{ totalBookings }}</h2>
+      </div>
+    </div>
+
+    <!-- TODAY BOOKINGS -->
+    <div class="col-lg-3 col-md-6">
+      <div class="dashboard-box bg-gradient-warning text-white shadow-lg p-4 rounded-4 text-center">
+        <i class="fa fa-calendar fa-2x mb-3"></i>
+        <h6 class="text-uppercase mb-1">Today's Bookings</h6>
+        <h2 class="fw-bold">{{ todayBookings }}</h2>
+      </div>
+    </div>
+
+    <!-- AVAILABLE VEHICLES -->
+    <div class="col-lg-3 col-md-6">
+      <div class="dashboard-box bg-gradient-info text-white shadow-lg p-4 rounded-4 text-center">
+        <i class="fa fa-check-circle fa-2x mb-3"></i>
+        <h6 class="text-uppercase mb-1">Available Cars</h6>
+        <h2 class="fw-bold">{{ availableVehicles }}</h2>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ======== RECENT BOOKINGS ======== -->
+  <div class="card shadow-lg rounded-4 mt-5 border-0">
+    <div class="card-header bg-dark text-white rounded-top-4 py-3">
+      <h5 class="mb-0"><i class="fa fa-clock-o"></i> Recent Bookings</h5>
+    </div>
+
+    <div class="card-body p-4">
+      <table class="table table-hover align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>#ID</th>
+            <th>Customer</th>
+            <th>Date</th>
+            <th>Car</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          @for (item of recentBookings; track item.id) {
+            <tr class="booking-row">
+              <td class="fw-bold">#{{ item.id }}</td>
+              <td>{{ item.customerName }}</td>
+              <td><i class="fa fa-calendar text-warning"></i> {{ item.bookingDate }}</td>
+              <td><i class="fa fa-car text-primary"></i> {{ item.carId }}</td>
+              <td class="fw-bold text-success">₹{{ item.totalBillAmount }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

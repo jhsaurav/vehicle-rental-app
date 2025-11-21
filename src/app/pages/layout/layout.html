@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg main-navbar shadow-sm py-3">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    <a class="navbar-brand brand-text" routerLink="/dashboard">
+      <i class="fa fa-car me-2"></i> VehicleRental
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarScroll">
+
+      <!-- Left Menu -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" routerLink="/dashboard" routerLinkActive="active-link">
+            <i class="fa fa-home me-2"></i> Dashboard
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" routerLink="/vehicles" routerLinkActive="active-link">
+            <i class="fa fa-car me-2"></i> Vehicles
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" routerLink="/booking" routerLinkActive="active-link">
+            <i class="fa fa-calendar-check-o me-2"></i> Bookings
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- Right Side -->
+      <div class="d-flex align-items-center">
+
+        <button class="dark-toggle-btn me-4" (click)="toggleDarkMode()">
+          <i class="fa" [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"></i>
+        </button>
+
+        <span class="me-3 user-label">
+          <i class="fa fa-user-circle me-1"></i> Admin
+        </span>
+
+        <button class="btn btn-danger px-3 logout-btn" (click)="logout()">
+          <i class="fa fa-sign-out"></i> Logout
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

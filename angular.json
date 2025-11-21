@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-angular20-app": {
+    "vehicle-Renting-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -25,6 +25,8 @@
               }
             ],
             "styles": [
+               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+               "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.css"
             ]
           },
@@ -56,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "my-angular20-app:build:production"
+              "buildTarget": "vehicle-Renting-app:build:production"
             },
             "development": {
-              "buildTarget": "my-angular20-app:build:development"
+              "buildTarget": "vehicle-Renting-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,5 +90,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4451a17f-04a1-4fe5-82f2-4474cdd9333c"
   }
 }

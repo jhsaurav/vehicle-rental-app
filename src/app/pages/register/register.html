@@ -1,0 +1,47 @@
+<div class="login-bg d-flex justify-content-center align-items-center vh-100">
+
+  <!-- Register Card -->
+  <div class="card login-card shadow-lg p-4 animate-slide"
+    style="width: 380px; border-radius: 18px; backdrop-filter: blur(10px); background: rgba(255,255,255,0.85);">
+
+    <div class="text-center mb-4">
+      <i class="fa fa-user-plus" style="font-size: 75px; color:#28a745;"></i>
+      <h3 class="mt-2 fw-bold">Create Account</h3>
+      <p class="text-muted">Register to continue</p>
+    </div>
+
+    <!-- Register Form -->
+    <form>
+
+      <div class="mb-3">
+        <label class="form-label">
+          <i class="fa fa-user"></i> Username
+        </label>
+        <input [(ngModel)]="registerObj.username" name="username" type="text"
+          class="form-control form-control-lg shadow-sm" placeholder="Choose a username" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">
+          <i class="fa fa-lock"></i> Password
+        </label>
+        <input [(ngModel)]="registerObj.password" name="password" type="password"
+          class="form-control form-control-lg shadow-sm" placeholder="Create a password" required>
+      </div>
+
+      <!-- Register Button -->
+      <button type="button" (click)="onRegister()" class="btn btn-success w-100 btn-lg shadow-sm mt-3">
+        <i class="fa fa-check-circle"></i> Register
+      </button>
+
+    </form>
+
+    <!-- Back to Login -->
+    <div class="text-center mt-3">
+      <a routerLink="/login" class="text-decoration-none fw-bold">
+        Already have an account? Login
+      </a>
+    </div>
+
+  </div>
+</div>

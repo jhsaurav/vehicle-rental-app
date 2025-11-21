@@ -1,0 +1,48 @@
+<div class="login-bg d-flex justify-content-center align-items-center vh-100">
+
+  <!-- Login Card -->
+  <div class="card login-card shadow-lg p-4 animate-slide"
+    style="width: 380px; border-radius: 18px; backdrop-filter: blur(10px); background: rgba(255,255,255,0.85);">
+
+    <div class="text-center mb-4">
+      <i class="fa fa-user-circle" style="font-size: 75px; color:#28a745;"></i>
+      <h3 class="mt-2 fw-bold">Login</h3>
+      <p class="text-muted">Sign in to continue</p>
+    </div>
+
+    <!-- Login Form -->
+    <form>
+
+      <div class="mb-3">
+        <label class="form-label">
+          <i class="fa fa-user"></i> Username
+        </label>
+        <input [(ngModel)]="loginObj.username" name="username" type="text"
+          class="form-control form-control-lg shadow-sm" placeholder="Enter username" required>
+      </div>
+
+     
+      <div class="mb-3">
+        <label class="form-label">
+          <i class="fa fa-lock"></i> Password
+        </label>
+        <input [(ngModel)]="loginObj.password" name="password" type="password"
+          class="form-control form-control-lg shadow-sm" placeholder="Enter password" required>
+      </div>
+
+      <!-- Login Button -->
+      <button type="button" (click)="onLogin()" class="btn btn-success w-100 btn-lg shadow-sm mt-3">
+        <i class="fa fa-sign-in"></i> Login
+      </button>
+    </form>
+    <!-- Register Link -->
+    <div class="text-center mt-3">
+      <a routerLink="/register" class="text-decoration-none fw-bold">New user? Register here</a>
+    </div>
+    <!-- Footer Links -->
+    <div class="text-center mt-3">
+      <a href="#" class="text-decoration-none">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>

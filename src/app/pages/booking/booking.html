@@ -1,0 +1,160 @@
+<div class="container mt-4">
+  <div class="row">
+
+    <!-- ====================== BOOKINGS LIST (COL-8) ====================== -->
+    <div class="col-lg-8 mb-3">
+      <div class="card shadow-sm">
+        <div class="card-header bg-warning text-dark">
+          <h5 class="mb-0">
+            <i class="fa fa-list"></i> Bookings List
+          </h5>
+        </div>
+
+        <div class="card-body" style="max-height: 550px; overflow-y: auto;">
+
+         <div class="row">
+
+  @for (item of bookingList; track item.id) {
+
+  <div class="col-lg-4 col-md-6 mb-3">
+
+    <div class="card border-warning shadow-sm booking-card">
+
+      <div class="card-body">
+
+        <div class="booking-info">
+          <h5 class="fw-bold text-warning mb-2">
+            <i class="fa fa-ticket"></i> Booking #{{ item.id }}
+          </h5>
+
+          <div class="small text-muted mb-2">
+            <i class="fa fa-calendar text-warning"></i> {{ item.bookingDate }}
+          </div>
+
+          <hr>
+
+          <p class="mb-1"><i class="fa fa-user text-warning"></i> <b>Customer:</b> {{ item.customerName }}</p>
+          <p class="mb-1"><i class="fa fa-building text-warning"></i> <b>City:</b> {{ item.customerCity }}</p>
+          <p class="mb-1"><i class="fa fa-phone text-warning"></i> <b>Mobile:</b> {{ item.mobileNo }}</p>
+          <p class="mb-1"><i class="fa fa-envelope text-warning"></i> <b>Email:</b> {{ item.email }}</p>
+          <p class="mb-1"><i class="fa fa-car text-warning"></i> <b>Car:</b> {{ item.carId }}</p>
+
+          <p class="fw-bold mt-2">
+            <i class="fa fa-money text-success"></i>
+            <span class="text-success">₹{{ item.totalBillAmount }}</span>
+          </p>
+        </div>
+
+        <div class="card-footer-actions mt-3 text-end">
+          <button class="btn btn-sm btn-warning me-2" (click)="onEditBooking(item)">
+            <i class="fa fa-pencil"></i>
+          </button>
+          <button class="btn btn-sm btn-danger" (click)="onDeleteBooking(item.id)">
+            <i class="fa fa-trash"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  
+  </div>
+
+  }
+
+</div>
+
+
+        </div>
+      </div>
+    </div>
+
+  
+    <!-- ====================== BOOKING FORM (COL-4) ====================== -->
+    <div class="col-lg-4 mb-3">
+      <div class="card shadow-sm">
+
+        <div class="card-header bg-warning text-dark">
+          <h5 class="mb-0">
+            <i class="fa fa-calendar-check-o"></i> Add / Edit Booking
+          </h5>
+        </div>
+
+        <div class="card-body">
+          <form>
+
+            <!-- ROW 1 -->
+            <div class="row">
+              <div class="col-6 mb-3">
+                <label class="form-label"><i class="fa fa-user"></i> Name</label>
+                <input type="text" [(ngModel)]="newBooking.customerName" name="customerName" class="form-control">
+              </div>
+
+              <div class="col-6 mb-3">
+                <label class="form-label"><i class="fa fa-building"></i> City</label>
+                <input type="text" [(ngModel)]="newBooking.customerCity" name="customerCity" class="form-control">
+              </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row">
+              <div class="col-6 mb-3">
+                <label class="form-label"><i class="fa fa-phone"></i> Mobile</label>
+                <input type="text" [(ngModel)]="newBooking.mobileNo" name="mobileNo" class="form-control">
+              </div>
+
+              <div class="col-6 mb-3">
+                <label class="form-label"><i class="fa fa-envelope"></i> Email</label>
+                <input type="email" [(ngModel)]="newBooking.email" name="email" class="form-control">
+              </div>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="row">
+              <div class="col-6 mb-3">
+                <label class="form-label"><i class="fa fa-car"></i> Car ID</label>
+                <input type="number" [(ngModel)]="newBooking.carId" name="carId" class="form-control">
+              </div>
+
+              <div class="col-6 mb-3">
+                <label class="form-label"><i class="fa fa-calendar"></i> Date</label>
+                <input type="date" [(ngModel)]="newBooking.bookingDate" name="bookingDate" class="form-control">
+              </div>
+            </div>
+
+            <!-- ROW 4 -->
+            <div class="row">
+              <div class="col-6 mb-3">
+                <label class="form-label"><i class="fa fa-percent"></i> Discount</label>
+                <input type="number" [(ngModel)]="newBooking.discount" name="discount" class="form-control">
+              </div>
+
+              <div class="col-6 mb-3">
+                <label class="form-label"><i class="fa fa-money"></i> Bill</label>
+                <input type="number" [(ngModel)]="newBooking.totalBillAmount" name="totalBillAmount" class="form-control">
+              </div>
+            </div>
+
+            <!-- Save / Update Toggle -->
+            @if(newBooking.id == 0) {
+            <button type="button" class="btn btn-warning w-100 mt-2" (click)="onSaveBooking()">
+              <i class="fa fa-save"></i> Save Booking
+            </button>
+            } @else {
+            <button type="button" class="btn btn-warning w-100 mt-2" (click)="onUpdateBooking()">
+              <i class="fa fa-refresh"></i> Update Booking
+            </button>
+            }
+
+            <button type="button" class="btn btn-secondary w-100 mt-2" (click)="clearForm()">
+              <i class="fa fa-eraser"></i> Clear
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
