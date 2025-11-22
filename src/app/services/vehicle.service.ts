@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class VehicleService {
 
   // JSON Server API URL
-  private apiUrl = "http://localhost:3000/cars";
+  private apiUrl = "https://vehicle-renting-backend.onrender.com/cars";
 
   // Inject HttpClient
   private http = inject(HttpClient);

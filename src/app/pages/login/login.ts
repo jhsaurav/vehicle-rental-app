@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { BASE_URL } from '../../environment';   // ✅ Import backend URL
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,6 @@ export class Login {
   http = inject(HttpClient);
   router = inject(Router);
 
-  // LOGIN MODEL
   loginObj = {
     username: '',
     password: ''
@@ -26,18 +26,16 @@ export class Login {
       return;
     }
 
-    // CHECK USER FROM JSON SERVER API
-    this.http.get<any[]>(
-      `http://localhost:3000/users?username=${this.loginObj.username}&password=${this.loginObj.password}`
-    ).subscribe(res => {
+    // ⭐ Use Render backend instead of localhost
+    const apiUrl = `${BASE_URL}/users?username=${this.loginObj.username}&password=${this.loginObj.password}`;
+
+    this.http.get<any[]>(apiUrl).subscribe(res => {
 
       if (res.length > 0) {
-        // USER FOUND
         localStorage.setItem("isLoggedIn", "true");
         localStorage.setItem("loggedUser", JSON.stringify(res[0]));
 
         alert("Login Successful!");
-
         this.router.navigateByUrl('/dashboard');
       }
       else {

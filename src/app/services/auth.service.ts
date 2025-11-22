@@ -7,11 +7,11 @@ import { Observable } from 'rxjs';
 export class AuthService {
   
   http = inject(HttpClient);
-  apiUrl = "http://localhost:3000/users";
+  apiUrl = "https://vehicle-renting-backend.onrender.com/users";
 
   // Check login
   login(username: string, password: string): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}?username=${username}password=${password}`);
+    return this.http.get<any[]>(`${this.apiUrl}?username=${username}&password=${password}`);
   }
 
   // Register new user
